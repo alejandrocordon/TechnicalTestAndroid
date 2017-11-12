@@ -221,7 +221,7 @@ public class DatabaseHandlerAccounts extends SQLiteOpenHelper {
         try {
             account_list.clear();
 
-            // Select All Query
+            // Select Visible Query
             String selectQuery = "SELECT * FROM " + TABLE_accountS + " WHERE " + KEY_isVisible + " = 'true' " ;
             Log.e("DataBaseHelper", "Get_accounts_Where_destiny = " + selectQuery);
 

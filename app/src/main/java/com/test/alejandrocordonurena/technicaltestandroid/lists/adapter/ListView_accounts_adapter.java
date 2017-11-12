@@ -105,7 +105,7 @@ public class ListView_accounts_adapter implements ListAdapter {
 
                                   float balanceInUnits = (Float.parseFloat(accounts.get(position).getAccountBalanceInCents()) / 1000);
                                   Balance.setText(balanceInUnits + accounts.get(position).getAccountCurrency());
-								  //Currency.setText(accounts.get(position).getAccountCurrency());
+								  Currency.setText(accounts.get(position).getAccountCurrency());
 
                               }catch(Exception e){
 
