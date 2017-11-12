@@ -3,7 +3,6 @@ package com.test.alejandrocordonurena.technicaltestandroid;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -91,9 +90,14 @@ public class ListAccountActivity extends AppCompatActivity {
             }
         });
 
+    }
 
 
-
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        accounts.clear();
+        db.close();
 
     }
 }
